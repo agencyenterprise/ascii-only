@@ -46,7 +46,7 @@ const disableAddressSubmit = (addressInput) => {
 
   addressInput.valid = false;
   addressSubmitBtnEl.disabled = true;
-  addressSubmitBtnEl.style.opacity = 0.8;
+  addressSubmitBtnEl.style.opacity = 0.6;
 };
 
 const enableAddressSubmit = (addressInput) => {
@@ -67,7 +67,7 @@ const setInputError = (addressInput, addressInputEl) => {
     return;
   }
 
-  addressInputEl.style.border = 'red 1px solid';
+  addressInputEl.style.borderColor = 'red';
 
   const errorMessageEl = document.createElement('div');
   errorMessageEl.innerHTML = 'Please provide only valid english characters.';
@@ -83,7 +83,7 @@ const removeInputError = (addressInput, addressInputEl) => {
     return;
   }
 
-  addressInputEl.style.border = 'none';
+  addressInputEl.style.borderColor = '#d9d9d9';
   const errorMessageEl = addressInputEl.parentNode.querySelector('.error-message');
 
   if (errorMessageEl) {
