@@ -6,7 +6,7 @@
   "author": "victor@ae.studio",
   "license": "MIT",
   "scripts": {
-    "build": "babel src -d lib"
+    "build": "BABEL_ENV=production babel src/ascii-only.js --out-file lib/ascii-only.min.js --source-maps inline"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
