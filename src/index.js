@@ -70,7 +70,7 @@ const setInputError = (addressInput, addressInputEl) => {
   addressInputEl.style.border = 'red 1px solid';
 
   const errorMessageEl = document.createElement('div');
-  errorMessageEl.innerHTML = 'You should provide valid latin characters.';
+  errorMessageEl.innerHTML = 'Please provide only valid english characters.';
   errorMessageEl.className = 'error-message';
   errorMessageEl.style.marginTop = '6px';
   errorMessageEl.style.color = 'red';
