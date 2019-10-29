@@ -114,7 +114,11 @@ const asciiOnly = () => {
     const addressInputEl = document.querySelector(addressInput.query);
 
     if (addressInputEl) {
-      addressInputEl.addEventListener('input', validateNonLatin(addressInput, addressInputEl));
+      const onInputUpdate = validateNonLatin(addressInput, addressInputEl);
+
+      addressInputEl.addEventListener('input', onInputUpdate);
+      // For address autocomplete automatically filling up city field
+      addressInputEl.addEventListener('change', onInputUpdate);
     }
   });
 };
