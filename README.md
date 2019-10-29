@@ -3,6 +3,8 @@
 ascii-only is a script that prevents non-ascii characters to be used in text inputs of a Shopify checkout page. It does that by
 highlighting the input with an error message and blocking the submit button while the form is in an invalid state.
 
+![Shipping Address](https://i.imgur.com/y1lXT2x.png)
+
 ## Getting Started
 
 The first requirement is that you **must** be a **Shopify Plus** member in order to use this script at your checkout page. The
