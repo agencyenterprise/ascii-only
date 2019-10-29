@@ -14,7 +14,8 @@ Login into your Shopify admin panel and then go to **Online Store > Themes > Liv
 
 You should see all your theme files displayed on the source tree. Go to the **Assets** folder and click at **Add a new asset** to 
 create a new file named: `ascii-only.min.js`. After that, go to the ascii-only repository [dist file](https://github.com/agencyenterprise/ascii-only/tree/master/dist/ascii-only.min.js)
-and then copy all the content from there and paste it into your Shopify's previously created file.
+and then copy all the content from there and paste it into your Shopify's previously created file. You can also achieve the
+same result by downloading the file from this repository and importing it to the **Assets** folder.
 
 It would be easier to just import the script from a CDN file but Shopify doesn't allow you to do it from the checkout page.
 If you try do something like this:
