@@ -37,10 +37,7 @@ Don't forget to save these two files and you should be able to block non-ascii c
 
 ## Disclaimer
 
-We're not responsible for any problems happening with your customers at your Shopify checkout page. This script came as a client
-need and it was well tested with many user cases. You can always double-check the code (which we encourage you to do it), fork the
-repository to your own needs or even open a pull request to help us improve this script.
-request to help us improve this script. 
+We're not responsible for any problems happening with your customers at your Shopify checkout page. This script came as a clien need and it was well tested with many user cases. You can always double-check the code (which we encourage you to do it), fork the repository to your own needs or even open a pull request to help us improve ascii-only.
 
 
 
