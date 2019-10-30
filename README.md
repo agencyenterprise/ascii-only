@@ -8,7 +8,7 @@ ascii-only is a script that prevents non-ascii characters from being used in tex
 
 ## Getting Started
 
-The first requirement is that you **must** be a **Shopify Plus** member in order to use this script at your checkout page. Unfortunately Shopify only allows you to add custom scripts to checkout pages if you're a plus member, so this implementation won't work if you don't have the ability to do that. Sorry!
+The first requirement is that you **must** be a **Shopify Plus** member in order to use this script at your checkout page. Shopify only allows you to add custom scripts to checkout pages if you're a plus member, so this implementation won't work if you don't have the ability to do that. Sorry!
 
 Ok, so if you're a plus member, let's get started!
 
