@@ -1,4 +1,5 @@
 # ascii-only
+Made with ❤️ by [ae.studio](https://ae.studio/)
 
 ascii-only was developed because we saw that a lot of Shopify store owners were having issues with users inputting non-latin characters at the checkout stage, causing all kinds of fulfillment issues. Unfortunately, you can only use custom checkout scripts if you're using Shopify Plus, but if that describes you then you're in luck!
 
@@ -46,7 +47,6 @@ Shopify will block the script from loaded by the browser.
 
 We've done our best to test this with different use cases and we'll do our best to keep this updated and working well, but we encourage you to test for yourself before implementing in your store. Feel free to open an issue if you find a bug or open a pull request to help us imporve ascii-only!
 
-Made with ❤️ by [ae.studio](https://ae.studio/)
 
 
 
