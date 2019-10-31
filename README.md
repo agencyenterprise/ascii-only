@@ -45,7 +45,7 @@ Shopify will block the script from loaded by the browser.
 
 ## Disclaimer
 
-We've done our best to test this with different use cases and we'll do our best to keep this updated and working well, but we encourage you to test for yourself before implementing in your store. Feel free to open an issue if you find a bug or open a pull request to help us imporve ascii-only!
+We've done our best to test this with different use cases and we'll do our best to keep this updated and working well, but we encourage you to test for yourself before implementing in your store. We're write some code and are letting you see it, but please use at your own discretion! Feel free to open an issue if you find a bug or open a pull request to help us imporve ascii-only!
 
 
 
