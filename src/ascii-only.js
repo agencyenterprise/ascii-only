@@ -31,7 +31,7 @@ const addressForm = {
 };
 
 const addressSubmitBtn = 'button.step__footer__continue-btn';
-const addressSubmitBtnEl = document.querySelector(addressSubmitBtn);
+let addressSubmitBtnEl = document.querySelector(addressSubmitBtn);
 
 const isFormValid = () => {
   const isInvalid = (addressInput) => !addressInput.valid;
@@ -92,10 +92,10 @@ const removeInputError = (addressInput, addressInputEl) => {
 };
 
 const validateNonLatin = (addressInput, addressInputEl) => (
-  (event) => {
+  ({target}) => {
     const rforeign = /[^\u0000-\u007f]/;
 
-    if (rforeign.test(event.target.value)) {
+    if (rforeign.test(target.value)) {
       event.preventDefault();
 
       setInputError(addressInput, addressInputEl);
@@ -114,13 +114,26 @@ const asciiOnly = () => {
     const addressInputEl = document.querySelector(addressInput.query);
 
     if (addressInputEl) {
-      const onInputUpdate = validateNonLatin(addressInput, addressInputEl);
+       // Remove the old binding (if any)
+       addressInputEl.removeEventListener('input', addressInput.bind);
+       addressInputEl.removeEventListener('change', addressInput.bind);
 
-      addressInputEl.addEventListener('input', onInputUpdate);
-      // For address autocomplete automatically filling up city field
-      addressInputEl.addEventListener('change', onInputUpdate);
+       // bind again
+       addressInput.bind = validateNonLatin(addressInput, addressInputEl);
+       addressInputEl.addEventListener('input', addressInput.bind);
+       addressInputEl.addEventListener('change', addressInput.bind);
+
+       // Trigger
+      addressInput.bind({target:addressInputEl});
     }
   });
 };
 
+const onChange = () =>{
+  // bind again
+  addressSubmitBtnEl = document.querySelector(addressSubmitBtn);
+  asciiOnly();
+}
+
 document.addEventListener('DOMContentLoaded', asciiOnly);
+document.addEventListener('page:change', onChange);
