@@ -8,6 +8,10 @@ const addressForm = {
     query: '#checkout_shipping_address_last_name',
     valid: true,
   },
+  company: {
+    query: '#checkout_shipping_address_company',
+    valid: true,
+  },
   address1: {
     query: '#checkout_shipping_address_address1',
     valid: true,
